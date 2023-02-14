@@ -29,6 +29,12 @@ public class Gaulois {
 				+ ", effetPotion=" + effetPotion + "]";
 	}
 	public static void main(String[] args) {
-		//TODO créer un main permettant de tester la classe Gaulois
+		Gaulois asterix = new Gaulois("Asterix", 8);
+		System.out.println(asterix);
+		System.out.println(asterix.prendreParole()); 
+		asterix.parler("Je suis fier d'être un gaulois");
+		Romain cesar = new Romain("César", 1);
+		asterix.frapper(cesar);
+		
 	}
 }

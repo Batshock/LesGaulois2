@@ -26,5 +26,12 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 	}
+	
+	public static void main(String[] args) {
+		Romain cesar = new Romain("César", 3);
+		System.out.println(cesar.prendreParole()); 
+		cesar.parler("A mort ces gaulois !");
+		cesar.recevoirCoup(1);
+	}
 }
 
