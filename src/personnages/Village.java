@@ -35,8 +35,8 @@ public class Village {
 		village.setChef(abraracourcix);
 		Gaulois asterix = new Gaulois("Astérix",8);
 		village.ajouterHabitant(asterix);
-		Gaulois gaulois = village.trouverHabitant(1);
-		System.out.println(gaulois);
+//		Gaulois gaulois = village.trouverHabitant(1);
+//		System.out.println(gaulois);
 //		Cela affiche "null" car on cherche dans un emplacement où il n'y a pas de gaulois, donc la variable gaulois ne vaut rien donc "null"
 		
 	}
