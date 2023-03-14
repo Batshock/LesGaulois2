@@ -21,10 +21,16 @@ public class Village {
 	}
 	public void ajouterHabitant(Gaulois gaulois) {
 		villageois[nbVillageois] = gaulois;
-		nbVillageois += 1;
+		nbVillageois++;
 	}
 	public Gaulois trouverHabitant(int numéro) {
 		return villageois[numéro];
+	}
+	public void afficherVillageois() {
+		System.out.println("Dans "+nom+" du chef "+chef.getNom()+" vivent les légendaires gaulois :");
+		for (int i=0; i<nbVillageois;i++) {
+			System.out.println("- "+villageois[i].getNom());
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -38,7 +44,9 @@ public class Village {
 //		Gaulois gaulois = village.trouverHabitant(1);
 //		System.out.println(gaulois);
 //		Cela affiche "null" car on cherche dans un emplacement où il n'y a pas de gaulois, donc la variable gaulois ne vaut rien donc "null"
-		
+		Gaulois obelix = new Gaulois("Obélix",25);
+		village.ajouterHabitant(obelix);
+		village.afficherVillageois();
 	}
 
 }
